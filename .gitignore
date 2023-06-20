@@ -1,3 +1,6 @@
+#git reset name_of_file [remove tracking]
+#git rm --cached name_of_file [detele file from remote repo]
+
 # Avoid accidental upload of the Sketch and Figma design files
 #####################################################
 ## Please do not remove lines 5 and 6 - thanks! 🙂 ##
