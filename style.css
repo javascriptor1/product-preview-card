@@ -1,0 +1,108 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --dark-cyan: hsl(158, 36%, 37%);
+  --cream: hsl(30, 38%, 92%);
+  --very-dark-blue: hsl(212, 21%, 14%);
+  --dark-grayish-blue: hsl(228, 12%, 48%);
+  --white: #fff;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    display: grid;
+    place-content: center;
+    background-color: var(--cream);
+    min-height: 100vh;
+    /* overflow-x: hidden; */
+}
+
+.product-card {
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: 375px;
+    margin: 32px 16px;
+}
+
+img {
+    max-width: 343px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    display: block;
+    margin: auto;
+}
+
+/* style for the product details */
+
+.product-card__details-div {
+    background-color: var(--white);
+    max-width: 343px;
+    padding: 32px 16px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.product-card__type{
+    color: var(--dark-grayish-blue);
+    letter-spacing: 4px;
+    font-weight: 100;
+    margin-bottom: 1rem;
+    font-size: 12px;
+}
+
+.product-card__name {
+    color: var(--very-dark-blue);
+    font-family: "Fraunces", serif;
+    font-weight: 700;
+    font-size: 2rem;
+    text-shadow: 0.5px 0 0;
+    width: 300px;
+    margin-bottom: 1rem;
+}
+.product-card__description{
+    color: var(--dark-grayish-blue);
+    width: 95%;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.product-card__prices {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    
+}
+
+.product-card__prices__current {
+    font-family: "Fraunces", serif;
+    font-weight: 700;
+    font-size: 2rem;
+    color: var(--dark-cyan);
+    margin-right: 16px;
+}
+.product-card__prices__old {
+    color: var(--dark-grayish-blue);
+}
+
+.product-card__button {
+    background-color: var(--dark-cyan);
+    color: var(--white);
+    width: 100%;
+    border: none;
+    padding: 14px;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.product-card__prices__cart {
+    display: inline;
+    margin-right: 8px;
+    vertical-align: bottom;
+}
+
