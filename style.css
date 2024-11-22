@@ -27,7 +27,9 @@ body {
   display: grid;
   grid-template-columns: 1fr;
   max-width: 375px;
-  margin: 32px 16px;
+  /* margin: 48px 16px; */
+  margin-top: 175px;
+  margin-left: 89px;
 }
 
 img {
@@ -100,7 +102,7 @@ img {
   font-size: 14px;
 }
 
-.product-card__button:hover ,
+.product-card__button:hover,
 .product-card__button:active {
   cursor: pointer;
   background-color: var(--very-dark-cyan);
@@ -115,10 +117,11 @@ img {
 @media (min-width: 640px) {
   .product-card {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr fit-content(300px);
     max-width: 600px;
-    max-height: 450px;
-    margin: 32px 16px;
+    /* max-height: 450px; */
+    /* margin: 32px 16px; */
+    margin-top: 175px;
   }
 
   img {
